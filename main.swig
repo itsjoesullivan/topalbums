@@ -32,22 +32,22 @@
     text-align: right;
   }
 </style>
-<title>Top Albums of {{ year }} as voted by Reddit</title>
+<title>Top Albums of {{ context.year }} as voted by Reddit</title>
 </head>
 <body>
   <div class="container">
-    <h1>Top Albums of {{ year }}</h1>
+    <h1>Top Albums of {{ context.year }}</h1>
     <h2><a href="{{ url }}">as voted by reddit</a></h2>
-    <p class=updated>Last updated {{ date }}</p>
+    <p class=updated>Last updated {{ context.date }}</p>
     <table cellpadding="5">
       <tr>
         <th>Rank</th>
         <th>Ups</th>
         <th>Description</th>
       </tr>
-      {% for album in albums %}
+      {% for album in context.albums %}
         <tr>
-          <td>{{ loop.key+1 }}</td>
+          <td>{{ loop.index + 1 }}</td>
           <td>{{ album.data.ups }}</td>
           <td>{{ album.data.body|safe }}</td>
         </tr>
