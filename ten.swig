@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width">
-<link rel="stylesheet" href="tufte.css" />
+<link rel="stylesheet" href="/tufte.css" />
 <style>
 .chart {
 }
