@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="/tufte.css" />
 <style>
 .chart {
+  padding-top: 3em;
 }
 .item {
   width: 100%;
@@ -28,8 +29,8 @@
   <article>
   <section>
     <h1>Top 10 Albums of {{ year }}</h1>
-    <p><span class="sidenote"><a href="{{ url }}">as voted by reddit</a></span></p>
-    <p><span class="sidenote">Last updated {{ date }}</span></p>
+    <p><span class="marginnote"><a href="{{ url }}">as voted by reddit</a></span></p>
+    <p><span class="marginnote">Last updated {{ date }}</span></p>
     <div class="chart sans">
     {% for album in albums %}
       <div class="item">
