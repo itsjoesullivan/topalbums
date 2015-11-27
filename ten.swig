@@ -22,13 +22,14 @@
   font-size: 80%;
 }
 </style>
-<title>Top Albums of {{ year }} as voted by Reddit</title>
+<title>Top 10 Albums of {{ year }} as voted by Reddit</title>
 </head>
 <body>
-  <div class="container">
+  <article>
+  <section>
     <h1>Top 10 Albums of {{ year }}</h1>
-    <h2><a href="{{ url }}">as voted by reddit</a></h2>
-    <p class=updated>Last updated {{ date }}</p>
+    <p><span class="sidenote"><a href="{{ url }}">as voted by reddit</a></span></p>
+    <p><span class="sidenote">Last updated {{ date }}</span></p>
     <div class="chart sans">
     {% for album in albums %}
       <div class="item">
@@ -42,6 +43,7 @@
       </div>
     {% endfor %}
     </div>
-  </div>
+  </section>
+  </article>
 </body>
 </html>
