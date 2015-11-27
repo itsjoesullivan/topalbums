@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="/tufte.css" />
 <style>
 .chart {
-  padding-top: 3em;
+  padding-top: 4em;
 }
 .item {
   width: 100%;
