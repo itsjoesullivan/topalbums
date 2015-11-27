@@ -26,6 +26,7 @@
 <title>Top 10 Albums of {{ year }} as voted by Reddit</title>
 </head>
 <body>
+  <a href="/">↰</a>
   <article>
   <section>
     <h1>Top 10 Albums of {{ year }}</h1>
