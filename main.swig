@@ -36,6 +36,7 @@
 </head>
 <body>
   <div class="container">
+    <p style="text-align: right;">Website by <a href="http://twitter.com/itsjoesullivan">@itsjoesullivan</a></p>
     <h1>Top Albums of {{ year }}</h1>
     <h2><a href="{{ url }}">as voted by reddit</a></h2>
     <p class=updated>Last updated {{ date }}</p>
